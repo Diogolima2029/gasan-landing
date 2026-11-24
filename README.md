@@ -12,8 +12,15 @@ js/main.js              Menu mobile e ano no rodapé
 assets/logo-gasan*.png  Logo oficial (colorido e versão branca) e ícones
 ```
 
-Seções: topo (hero), sobre a empresa, produtos (materiais de construção + variedades),
-diferenciais, contato e localização, rodapé.
+Seções: barra superior com contato, topo com foto grande, diferenciais, faixa de
+categorias, vitrine de materiais (cards numerados com itens e aplicações), banners,
+a empresa e números, "e muito mais", chamada para orçamento, contato e rodapé completo.
+
+## Fotos
+
+Coloque as fotos em `assets/fotos/` com os nomes listados em
+`assets/fotos/LEIA-ME.txt`. Cada foto aparece sozinha no lugar certo assim que o
+arquivo existe; enquanto não existe, o site mostra um espaço reservado com o nome do arquivo.
 
 ## Como visualizar
 
@@ -26,5 +33,5 @@ Abra o `index.html` no navegador. Não precisa de build nem de instalação.
 - [ ] Textos reais: história, números, diferenciais
 - [ ] Endereço, telefone, WhatsApp, e-mail e horário
 - [ ] Mapa do Google Maps (iframe na seção de contato)
-- [ ] Fotos da loja, da equipe e dos produtos
+- [ ] Fotos (ver `assets/fotos/LEIA-ME.txt`)
 - [ ] Links das redes sociais e CNPJ
