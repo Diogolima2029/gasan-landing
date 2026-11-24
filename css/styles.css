@@ -322,3 +322,5 @@ p { margin: 0 0 1em; }
 .footer__bottom { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 20px; padding-bottom: 24px; border-top: 1px solid rgba(255,255,255,.1); font-size: .85rem; }
 @media (max-width: 960px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .footer__grid { grid-template-columns: 1fr; gap: 32px; padding-top: 56px; } }
+
+@media (max-width: 480px) { .kicker { letter-spacing: .1em; font-size: .72rem; } }

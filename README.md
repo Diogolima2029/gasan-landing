@@ -33,5 +33,5 @@ Abra o `index.html` no navegador. Não precisa de build nem de instalação.
 - [ ] Textos reais: história, números, diferenciais
 - [ ] Endereço, telefone, WhatsApp, e-mail e horário
 - [ ] Mapa do Google Maps (iframe na seção de contato)
-- [ ] Fotos (ver `assets/fotos/LEIA-ME.txt`)
+- [x] Fotos (geradas por IA; trocar por fotos reais da loja quando possível, ver `assets/fotos/LEIA-ME.txt`)
 - [ ] Links das redes sociais e CNPJ
