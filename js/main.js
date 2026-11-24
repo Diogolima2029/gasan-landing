@@ -13,15 +13,23 @@ if (toggle && nav) {
 }
 
 // Fotos: cada espaço com data-src mostra a foto quando o arquivo existe
-// em assets/fotos/. Enquanto não existe, fica o espaço reservado com o nome do arquivo.
+// em assets/fotos/. Aceita .jpg, .jpeg, .png ou .webp com o mesmo nome.
+// Enquanto não existe, fica o espaço reservado com o nome do arquivo.
+const EXTS = ['jpg', 'jpeg', 'png', 'webp'];
 document.querySelectorAll('.photo[data-src]').forEach((el) => {
-  const src = el.dataset.src;
-  const img = new Image();
-  img.onload = () => {
-    el.style.backgroundImage = `url("${src}")`;
-    el.classList.add('has-photo');
+  const base = el.dataset.src.replace(/\.[a-z]+$/i, '');
+  const tryExt = (i) => {
+    if (i >= EXTS.length) return;
+    const src = `${base}.${EXTS[i]}`;
+    const img = new Image();
+    img.onload = () => {
+      el.style.backgroundImage = `url("${src}")`;
+      el.classList.add('has-photo');
+    };
+    img.onerror = () => tryExt(i + 1);
+    img.src = src;
   };
-  img.src = src;
+  tryExt(0);
 });
 
 // Ano atual no rodapé

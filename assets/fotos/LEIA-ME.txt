@@ -1,7 +1,8 @@
 FOTOS DO SITE GASAN
 ===================
 
-Coloque as fotos nesta pasta com EXATAMENTE estes nomes (formato .jpg).
+Coloque as fotos nesta pasta com EXATAMENTE estes nomes.
+Pode ser .jpg, .png ou .webp (ex.: hero.jpg ou hero.png, os dois funcionam).
 Assim que o arquivo existir, a foto aparece sozinha no site.
 
 TOPO (a foto grande)
