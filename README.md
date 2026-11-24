@@ -9,7 +9,7 @@ O nome vem das iniciais dos patriarcas e matriarcas da família.
 index.html              Página única com todas as seções
 css/styles.css          Estilos (cores provisórias em :root)
 js/main.js              Menu mobile e ano no rodapé
-assets/logo-placeholder.svg   Logo provisório (substituir pelo oficial)
+assets/logo-gasan*.png  Logo oficial (colorido e versão branca) e ícones
 ```
 
 Seções: topo (hero), sobre a empresa, produtos (materiais de construção + variedades),
@@ -21,8 +21,8 @@ Abra o `index.html` no navegador. Não precisa de build nem de instalação.
 
 ## Pendências (marcadas com `TODO` e `[Texto provisório]` no código)
 
-- [ ] Logo oficial (gerar com IA e salvar em `assets/`)
-- [ ] Ajustar a paleta de cores ao logo (`css/styles.css`, bloco `:root`)
+- [x] Logo oficial
+- [x] Paleta de cores ajustada ao logo
 - [ ] Textos reais: história, números, diferenciais
 - [ ] Endereço, telefone, WhatsApp, e-mail e horário
 - [ ] Mapa do Google Maps (iframe na seção de contato)
