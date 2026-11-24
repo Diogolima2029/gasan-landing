@@ -1,0 +1,38 @@
+FOTOS DO SITE GASAN
+===================
+
+Coloque as fotos nesta pasta com EXATAMENTE estes nomes.
+Pode ser .jpg, .png ou .webp (ex.: hero.jpg ou hero.png, os dois funcionam).
+Assim que o arquivo existir, a foto aparece sozinha no site.
+
+TOPO (a foto grande)
+  hero.jpg               Horizontal, pelo menos 1920 px de largura.
+                         Ex.: fachada da loja, pátio de materiais, obra.
+
+FAIXA "COMPRE POR CATEGORIA" (quadradas, pelo menos 600 x 600 px)
+  cat-basico.jpg         Cimento, tijolos, areia
+  cat-ferragens.jpg      Ferramentas, parafusos
+  cat-eletrica.jpg       Fios, disjuntores, tomadas
+  cat-hidraulica.jpg     Tubos e conexões
+  cat-tintas.jpg         Latas de tinta, pisos
+  cat-telhados.jpg       Telhas, madeiras
+
+VITRINE "TUDO O QUE A SUA OBRA PRECISA" (horizontais, pelo menos 1000 px)
+  mat-basico.jpg
+  mat-ferragens.jpg
+  mat-eletrica.jpg
+  mat-hidraulica.jpg
+  mat-tintas.jpg
+  mat-telhados.jpg
+
+OUTRAS
+  banner-entrega.jpg     Caminhão de entrega da loja
+  sobre.jpg              Família, equipe ou interior da loja
+  mais-utilidades.jpg    Utilidades domésticas
+  mais-jardim.jpg        Jardim
+  mais-iluminacao.jpg    Iluminação e decoração
+  mais-variedades.jpg    Outras linhas
+
+Dica: fotos reais da loja, da equipe e dos produtos deixam o site muito
+mais profissional do que fotos de banco de imagens.
+Se usar banco de imagens, prefira Unsplash ou Pexels (uso gratuito).
