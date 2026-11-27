@@ -89,3 +89,24 @@ if (header) {
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 }
+
+// ===== Faixa de marcas: botão pausar/retomar e velocidade constante =====
+const marcas = document.getElementById('marcas');
+if (marcas) {
+  const botao = document.getElementById('marcas-pausa');
+  const lista = marcas.querySelector('.marcas__lista');
+  const trilho = marcas.querySelector('.marcas__trilho');
+  // ~45 px por segundo, qualquer que seja a largura da lista
+  const ajustarTempo = () => {
+    if (lista && trilho) trilho.style.setProperty('--marcas-tempo', `${Math.max(20, lista.scrollWidth / 45)}s`);
+  };
+  ajustarTempo();
+  window.addEventListener('load', ajustarTempo);
+  if (botao) {
+    botao.addEventListener('click', () => {
+      const pausado = marcas.classList.toggle('is-pausado');
+      botao.setAttribute('aria-pressed', String(pausado));
+      botao.querySelector('.marcas__pausa-txt').textContent = pausado ? 'Retomar' : 'Pausar';
+    });
+  }
+}
