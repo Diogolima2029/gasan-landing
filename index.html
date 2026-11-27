@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GASAN | Materiais de Construção</title>
-  <meta name="description" content="GASAN: materiais de construção, ferragens, elétrica, hidráulica, tintas e utilidades. Orçamento rápido pelo WhatsApp e entrega na obra.">
+  <meta name="description" content="GASAN: materiais de construção, ferragens, elétrica, hidráulica, tintas e utilidades. Orçamento rápido pelo WhatsApp e entrega em todo o Rio de Janeiro e arredores.">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta name="theme-color" content="#001d51">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -35,24 +36,26 @@
   <!-- ===== Barra superior ===== -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <span><svg class="ico"><use href="#i-pin"/></svg>Rua Exemplo, 000 · Bairro · Cidade/UF</span>
+      <span><svg class="ico"><use href="#i-pin"/></svg>Entregamos no Rio de Janeiro e arredores</span>
       <span class="topbar__hide-sm"><svg class="ico"><use href="#i-clock"/></svg>Seg. a sex. 7h–18h · Sáb. 7h–12h</span>
       <a href="tel:+550000000000"><svg class="ico"><use href="#i-phone"/></svg>(00) 0000-0000</a>
     </div>
   </div>
 
   <!-- ===== Cabeçalho ===== -->
-  <header class="header" id="topo">
+  <header class="header header--over" id="topo">
     <div class="container header__inner">
       <a href="#topo" class="logo" aria-label="GASAN, página inicial">
-        <img src="assets/logo-gasan.png" alt="GASAN" width="537" height="160">
+        <img class="logo__cor" src="assets/logo-gasan.png" alt="GASAN" width="537" height="160">
+        <img class="logo__branco" src="assets/logo-gasan-branco.png" alt="" width="537" height="160">
       </a>
       <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="menu">
-        <a href="#categorias">Produtos</a>
+        <a href="catalogo.html">Catálogo</a>
         <a href="#materiais">Materiais</a>
+        <a href="#como-funciona">Como funciona</a>
         <a href="#sobre">A empresa</a>
         <a href="#contato">Contato</a>
         <a href="#orcamento" class="btn btn--primary">Solicitar orçamento</a>
@@ -61,34 +64,87 @@
   </header>
 
   <main>
-    <!-- ===== Hero com foto grande =====
-         FOTO: salve como assets/fotos/hero.jpg (horizontal, mín. 1920 px de largura) -->
-    <section class="hero photo" data-src="assets/fotos/hero.jpg" data-label="Foto principal: hero.jpg (obra, fachada ou pátio de materiais)">
-      <div class="container hero__inner">
-        <p class="kicker">Materiais de construção e muito mais</p>
-        <h1>Do alicerce<br>ao acabamento.</h1>
-        <p class="hero__lead">Material básico, ferragens, elétrica, hidráulica, tintas e acabamento com estoque à pronta entrega e atendimento de quem entende de obra.</p>
-        <div class="hero__actions">
-          <a href="#orcamento" class="btn btn--primary">Solicitar orçamento <svg class="ico"><use href="#i-arrow"/></svg></a>
-          <a href="#materiais" class="btn btn--outline-light">Ver materiais</a>
+    <!-- ===== Hero: carrossel com fade (Swiper) ===== -->
+    <section class="hs swiper" aria-label="Destaques">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('assets/fotos/hero.jpg')">
+          <div class="container"><div class="hs__content">
+            <p class="kicker">Materiais de construção e muito mais</p>
+            <h1>Do alicerce<br>ao acabamento.</h1>
+            <p class="hs__lead">Material básico, ferragens, elétrica, hidráulica, tintas e acabamento com entrega rápida na sua obra e atendimento de quem entende de obra.</p>
+            <div class="hs__actions"><a href="#orcamento" class="btn btn--primary">Solicitar orçamento <svg class="ico"><use href="#i-arrow"/></svg></a><a href="#materiais" class="btn btn--outline-light">Ver materiais</a></div>
+          </div></div>
         </div>
-        <ul class="hero__checks">
-          <li><svg class="ico"><use href="#i-check"/></svg>Entrega na obra</li>
-          <li><svg class="ico"><use href="#i-check"/></svg>Orçamento pelo WhatsApp</li>
-          <li><svg class="ico"><use href="#i-check"/></svg>Empresa de família</li>
-        </ul>
+        <div class="swiper-slide" style="background-image:url('assets/fotos/hero-2-web.jpg')">
+          <div class="container"><div class="hs__content">
+            <p class="kicker">Rio de Janeiro e arredores</p>
+            <h1>Entregamos direto<br>na sua obra.</h1>
+            <p class="hs__lead">Você manda a lista, nós cuidamos da compra e da entrega em toda a cidade do Rio de Janeiro e arredores.</p>
+            <div class="hs__actions"><a href="#orcamento" class="btn btn--primary">Consultar entrega <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+          </div></div>
+        </div>
+        <div class="swiper-slide" style="background-image:url('assets/fotos/hero-3-web.jpg')">
+          <div class="container"><div class="hs__content">
+            <p class="kicker">Para construtoras e profissionais</p>
+            <h1>Condições especiais<br>para grandes volumes.</h1>
+            <p class="hs__lead">Trabalhamos com grandes fabricantes e fornecedores para oferecer variedade e bom preço.</p>
+            <div class="hs__actions"><a href="#orcamento" class="btn btn--outline-light">Falar com um vendedor <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+          </div></div>
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev" aria-label="Anterior"></div>
+      <div class="swiper-button-next" aria-label="Próximo"></div>
     </section>
 
     <!-- ===== Diferenciais ===== -->
     <section class="perks">
       <div class="container">
         <ul class="perks__grid">
-          <li><svg class="ico ico--lg"><use href="#i-truck"/></svg><div><strong>Entrega na obra</strong><span>Levamos o material até você</span></div></li>
+          <li><svg class="ico ico--lg"><use href="#i-truck"/></svg><div><strong>Entrega na obra</strong><span>Em toda a cidade do Rio e arredores</span></div></li>
           <li><svg class="ico ico--lg"><use href="#i-helmet"/></svg><div><strong>Atendimento técnico</strong><span>Ajuda para escolher o material certo</span></div></li>
           <li><svg class="ico ico--lg"><use href="#i-tag"/></svg><div><strong>Preço para construtoras</strong><span>Condições para grandes volumes</span></div></li>
           <li><svg class="ico ico--lg"><use href="#i-card"/></svg><div><strong>Pagamento facilitado</strong><span>Pix, cartão e parcelamento</span></div></li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ===== Como funciona: texto em fade + imagem subindo na vertical (Swiper) ===== -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="head head--center reveal">
+          <p class="kicker kicker--dark">Como funciona</p>
+          <h2>Da lista de materiais à entrega na sua obra</h2>
+        </div>
+        <div class="sp reveal">
+          <div class="sp__text">
+            <ol class="sv-list">
+              <li class="is-active"><span>1</span>Orçamento pelo WhatsApp</li>
+              <li><span>2</span>Compra com fornecedores parceiros</li>
+              <li><span>3</span>Confirme e pague</li>
+              <li><span>4</span>Receba na obra</li>
+            </ol>
+            <div class="swiper serv-text">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><p>Mande sua lista de materiais pelo WhatsApp e receba a proposta completa, com preços, prazo e frete.</p></div>
+                <div class="swiper-slide"><p>Compramos de grandes fabricantes e fornecedores. Itens de pronta entrega saem do nosso estoque; os demais chegam direto do fornecedor.</p></div>
+                <div class="swiper-slide"><p>Pix, cartão ou parcelado, como ficar melhor para você.</p></div>
+                <div class="swiper-slide"><p>Entregamos em toda a cidade do Rio de Janeiro e arredores, direto no endereço combinado.</p></div>
+              </div>
+            </div>
+            <div class="ctrl"><button class="serv-prev" aria-label="Anterior">↑</button><button class="serv-next" aria-label="Próximo">↓</button></div>
+          </div>
+          <div class="sp__img">
+            <div class="swiper serv-img">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/fotos/passo-orcamento-web.jpg" alt="Orçamento pelo WhatsApp" onerror="this.onerror=null;this.src='assets/fotos/sobre.jpg'"></div>
+                <div class="swiper-slide"><img src="assets/fotos/mat-basico.jpg" alt="Materiais de fornecedores parceiros"></div>
+                <div class="swiper-slide"><img src="assets/fotos/passo-pagamento-web.jpg" alt="Confirmação e pagamento do pedido" onerror="this.onerror=null;this.src='assets/fotos/hero-3-web.jpg'"></div>
+                <div class="swiper-slide"><img src="assets/fotos/hero-2-web.jpg" alt="Entrega na obra" style="object-position: 85% center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -101,139 +157,62 @@
             <p class="kicker kicker--dark">Produtos</p>
             <h2>Compre por categoria</h2>
           </div>
-          <a href="#orcamento" class="link-arrow">Não achou o que procura? Fale com a gente <svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a href="catalogo.html" class="link-arrow">Ver catálogo completo com mais de 11 mil produtos <svg class="ico"><use href="#i-arrow"/></svg></a>
         </div>
         <div class="cats">
-          <a href="#mat-basico" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-basico.jpg" data-label="cat-basico.jpg"></span><span class="cat__name">Material básico</span></a>
-          <a href="#mat-ferragens" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-ferragens.jpg" data-label="cat-ferragens.jpg"></span><span class="cat__name">Ferragens e ferramentas</span></a>
-          <a href="#mat-eletrica" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-eletrica.jpg" data-label="cat-eletrica.jpg"></span><span class="cat__name">Elétrica</span></a>
-          <a href="#mat-hidraulica" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-hidraulica.jpg" data-label="cat-hidraulica.jpg"></span><span class="cat__name">Hidráulica</span></a>
-          <a href="#mat-tintas" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-tintas.jpg" data-label="cat-tintas.jpg"></span><span class="cat__name">Tintas e acabamento</span></a>
-          <a href="#mat-telhados" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-telhados.jpg" data-label="cat-telhados.jpg"></span><span class="cat__name">Telhados e madeiras</span></a>
+          <a href="#materiais" data-produto="0" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-basico.jpg" data-label="cat-basico.jpg"></span><span class="cat__name">Material básico</span></a>
+          <a href="#materiais" data-produto="1" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-ferragens.jpg" data-label="cat-ferragens.jpg"></span><span class="cat__name">Ferragens e ferramentas</span></a>
+          <a href="#materiais" data-produto="2" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-eletrica.jpg" data-label="cat-eletrica.jpg"></span><span class="cat__name">Elétrica</span></a>
+          <a href="#materiais" data-produto="3" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-hidraulica.jpg" data-label="cat-hidraulica.jpg"></span><span class="cat__name">Hidráulica</span></a>
+          <a href="#materiais" data-produto="4" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-tintas.jpg" data-label="cat-tintas.jpg"></span><span class="cat__name">Tintas e acabamento</span></a>
+          <a href="#materiais" data-produto="5" class="cat"><span class="cat__img photo" data-src="assets/fotos/cat-telhados.jpg" data-label="cat-telhados.jpg"></span><span class="cat__name">Telhados e madeiras</span></a>
         </div>
       </div>
     </section>
 
-    <!-- ===== Vitrine de materiais ===== -->
+    <!-- ===== Produtos: texto em fade + imagem deslizando na horizontal (Swiper) ===== -->
     <section class="section section--tint" id="materiais">
       <div class="container">
-        <div class="head head--center">
+        <div class="head head--center reveal">
           <p class="kicker kicker--dark">Nossa linha de materiais</p>
           <h2>Tudo o que a sua obra precisa</h2>
-          <p>Trabalhamos com marcas reconhecidas e mantemos estoque das linhas mais usadas para você não parar a obra.</p>
+          <p>Trabalhamos com grandes fabricantes e fornecedores para você não parar a obra.</p>
         </div>
-
-        <div class="mats">
-          <article class="mat" id="mat-basico">
-            <header class="mat__head"><span class="mat__num">01</span><h3>Material básico</h3></header>
-            <div class="mat__img photo" data-src="assets/fotos/mat-basico.jpg" data-label="mat-basico.jpg"></div>
-            <div class="mat__body">
-              <p>Base de toda obra: do alicerce à alvenaria, com entrega em grande volume.</p>
-              <h4>Principais itens</h4>
-              <ul class="checks">
-                <li>Cimento, cal e argamassa</li>
-                <li>Areia, brita e pedra</li>
-                <li>Tijolos e blocos de concreto</li>
-                <li>Vergalhões e telas</li>
-              </ul>
-              <h4>Aplicações</h4>
-              <ul class="tags"><li>Fundação</li><li>Alvenaria</li><li>Laje</li><li>Reboco</li></ul>
+        <div class="sp reveal">
+          <div class="sp__text">
+            <div class="swiper prod-text">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="sp__num">01</div><h3>Material básico</h3><p>Cimento, areia, brita, blocos e tijolos: a base de toda obra, do alicerce à alvenaria, com entrega em grande volume.</p><ul class="tags"><li>Fundação</li><li>Alvenaria</li><li>Reboco</li></ul><a href="#orcamento" class="btn btn--navy">Saiba mais</a></div>
+                <div class="swiper-slide"><div class="sp__num">02</div><h3>Ferragens e ferramentas</h3><p>Vergalhões, parafusos, pregos e ferramentas manuais e elétricas para cada etapa da obra.</p><ul class="tags"><li>Estrutura</li><li>Fixação</li><li>Ferramentas</li></ul><a href="#orcamento" class="btn btn--navy">Saiba mais</a></div>
+                <div class="swiper-slide"><div class="sp__num">03</div><h3>Elétrica</h3><p>Fios, cabos, disjuntores, tomadas e interruptores para instalações seguras.</p><ul class="tags"><li>Instalação</li><li>Quadro</li><li>Acabamento</li></ul><a href="#orcamento" class="btn btn--navy">Saiba mais</a></div>
+                <div class="swiper-slide"><div class="sp__num">04</div><h3>Hidráulica</h3><p>Tubos, conexões, registros e caixas d'água para água fria, quente e esgoto.</p><ul class="tags"><li>Água</li><li>Esgoto</li><li>Reservatórios</li></ul><a href="#orcamento" class="btn btn--navy">Saiba mais</a></div>
+                <div class="swiper-slide"><div class="sp__num">05</div><h3>Tintas e acabamento</h3><p>Tintas, massas, pisos e revestimentos para deixar a obra pronta.</p><ul class="tags"><li>Pintura</li><li>Pisos</li><li>Revestimentos</li></ul><a href="#orcamento" class="btn btn--navy">Saiba mais</a></div>
+                <div class="swiper-slide"><div class="sp__num">06</div><h3>Telhados e madeiras</h3><p>Telhas, madeiras, calhas e esquadrias para cobrir e fechar a obra.</p><ul class="tags"><li>Cobertura</li><li>Estrutura</li><li>Esquadrias</li></ul><a href="#orcamento" class="btn btn--navy">Saiba mais</a></div>
+              </div>
             </div>
-          </article>
-
-          <article class="mat" id="mat-ferragens">
-            <header class="mat__head"><span class="mat__num">02</span><h3>Ferragens e ferramentas</h3></header>
-            <div class="mat__img photo" data-src="assets/fotos/mat-ferragens.jpg" data-label="mat-ferragens.jpg"></div>
-            <div class="mat__body">
-              <p>Ferramentas manuais e elétricas e as ferragens do dia a dia da obra.</p>
-              <h4>Principais itens</h4>
-              <ul class="checks">
-                <li>Parafusos, pregos e buchas</li>
-                <li>Fechaduras, dobradiças e puxadores</li>
-                <li>Ferramentas manuais</li>
-                <li>Furadeiras, serras e lixadeiras</li>
-              </ul>
-              <h4>Aplicações</h4>
-              <ul class="tags"><li>Montagem</li><li>Marcenaria</li><li>Manutenção</li></ul>
+            <div class="ctrl"><button class="prod-prev" aria-label="Anterior">←</button><span class="ctrl__count" id="prod-count">01 / 06</span><button class="prod-next" aria-label="Próximo">→</button></div>
+          </div>
+          <div class="sp__img">
+            <div class="swiper prod-img">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/fotos/mat-basico.jpg" alt="Material básico"></div>
+                <div class="swiper-slide"><img src="assets/fotos/mat-ferragens.jpg" alt="Ferragens e ferramentas"></div>
+                <div class="swiper-slide"><img src="assets/fotos/mat-eletrica.jpg" alt="Elétrica"></div>
+                <div class="swiper-slide"><img src="assets/fotos/mat-hidraulica.jpg" alt="Hidráulica"></div>
+                <div class="swiper-slide"><img src="assets/fotos/mat-tintas.jpg" alt="Tintas e acabamento"></div>
+                <div class="swiper-slide"><img src="assets/fotos/mat-telhados.jpg" alt="Telhados e madeiras"></div>
+              </div>
             </div>
-          </article>
-
-          <article class="mat" id="mat-eletrica">
-            <header class="mat__head"><span class="mat__num">03</span><h3>Elétrica</h3></header>
-            <div class="mat__img photo" data-src="assets/fotos/mat-eletrica.jpg" data-label="mat-eletrica.jpg"></div>
-            <div class="mat__body">
-              <p>Instalação completa, da entrada de energia até a iluminação.</p>
-              <h4>Principais itens</h4>
-              <ul class="checks">
-                <li>Fios e cabos</li>
-                <li>Disjuntores e quadros</li>
-                <li>Tomadas e interruptores</li>
-                <li>Lâmpadas e luminárias</li>
-              </ul>
-              <h4>Aplicações</h4>
-              <ul class="tags"><li>Residencial</li><li>Comercial</li><li>Iluminação</li></ul>
-            </div>
-          </article>
-
-          <article class="mat" id="mat-hidraulica">
-            <header class="mat__head"><span class="mat__num">04</span><h3>Hidráulica</h3></header>
-            <div class="mat__img photo" data-src="assets/fotos/mat-hidraulica.jpg" data-label="mat-hidraulica.jpg"></div>
-            <div class="mat__body">
-              <p>Água fria, quente e esgoto, com conexões para cada situação.</p>
-              <h4>Principais itens</h4>
-              <ul class="checks">
-                <li>Tubos e conexões PVC</li>
-                <li>Registros e válvulas</li>
-                <li>Caixas d'água</li>
-                <li>Louças e metais</li>
-              </ul>
-              <h4>Aplicações</h4>
-              <ul class="tags"><li>Água fria</li><li>Esgoto</li><li>Banheiro</li><li>Cozinha</li></ul>
-            </div>
-          </article>
-
-          <article class="mat" id="mat-tintas">
-            <header class="mat__head"><span class="mat__num">05</span><h3>Tintas e acabamento</h3></header>
-            <div class="mat__img photo" data-src="assets/fotos/mat-tintas.jpg" data-label="mat-tintas.jpg"></div>
-            <div class="mat__body">
-              <p>O que dá cara nova à obra: pintura, pisos e revestimentos.</p>
-              <h4>Principais itens</h4>
-              <ul class="checks">
-                <li>Tintas, massas e texturas</li>
-                <li>Pisos e revestimentos</li>
-                <li>Rejuntes e argamassas colantes</li>
-                <li>Impermeabilizantes</li>
-              </ul>
-              <h4>Aplicações</h4>
-              <ul class="tags"><li>Pintura</li><li>Reforma</li><li>Impermeabilização</li></ul>
-            </div>
-          </article>
-
-          <article class="mat" id="mat-telhados">
-            <header class="mat__head"><span class="mat__num">06</span><h3>Telhados e madeiras</h3></header>
-            <div class="mat__img photo" data-src="assets/fotos/mat-telhados.jpg" data-label="mat-telhados.jpg"></div>
-            <div class="mat__body">
-              <p>Cobertura e esquadrias para fechar a obra com segurança.</p>
-              <h4>Principais itens</h4>
-              <ul class="checks">
-                <li>Telhas cerâmicas e de fibrocimento</li>
-                <li>Calhas e rufos</li>
-                <li>Madeiras para estrutura</li>
-                <li>Portas e janelas</li>
-              </ul>
-              <h4>Aplicações</h4>
-              <ul class="tags"><li>Cobertura</li><li>Estrutura</li><li>Esquadrias</li></ul>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ===== Banners de destaque ===== -->
     <section class="section section--tight">
-      <div class="container banners">
+      <div class="container banners reveal">
         <a href="#orcamento" class="banner banner--navy photo" data-src="assets/fotos/banner-entrega.jpg" data-label="banner-entrega.jpg (caminhão de entrega)">
-          <span class="banner__kicker">Logística própria</span>
+          <span class="banner__kicker">Rio de Janeiro e arredores</span>
           <strong>Entregamos na sua obra</strong>
           <span class="banner__cta">Consultar entrega <svg class="ico"><use href="#i-arrow"/></svg></span>
         </a>
@@ -247,20 +226,21 @@
 
     <!-- ===== Sobre ===== -->
     <section class="section" id="sobre">
-      <div class="container about">
-        <div class="about__img photo" data-src="assets/fotos/sobre.jpg" data-label="sobre.jpg (família, equipe ou loja)"></div>
+      <div class="container about reveal">
+        <div class="about__img photo" data-src="assets/fotos/sobre-web.jpg" data-label="sobre.png (avatar GASAN)"></div>
         <div class="about__text">
           <p class="kicker kicker--dark">A empresa</p>
           <h2>Uma empresa de família</h2>
           <p>O nome <strong>GASAN</strong> nasceu das iniciais dos patriarcas e matriarcas da nossa família. Esse cuidado de família continua em cada atendimento.</p>
-          <p>[Texto provisório: contar em poucas linhas quando a loja abriu, onde fica e o que mudou desde então.]</p>
-          <a href="#contato" class="btn btn--navy">Venha nos visitar</a>
+          <p>Somos uma revendedora: compramos de grandes fabricantes e fornecedores e levamos o material até você, no Rio de Janeiro e arredores. O atendimento é direto, pelo WhatsApp.</p>
+          <p>[Texto provisório: contar em poucas linhas quando a empresa começou e o que mudou desde então.]</p>
+          <a href="#orcamento" class="btn btn--navy">Solicitar orçamento</a>
         </div>
       </div>
       <div class="container">
-        <ul class="numbers">
+        <ul class="numbers reveal">
           <li><strong>00+</strong><span>anos de história</span></li>
-          <li><strong>0.000+</strong><span>itens em estoque</span></li>
+          <li><strong>0.000+</strong><span>itens no catálogo</span></li>
           <li><strong>00 mil+</strong><span>clientes atendidos</span></li>
           <li><strong>000+</strong><span>obras abastecidas por ano</span></li>
         </ul>
@@ -274,11 +254,11 @@
           <p class="kicker kicker--dark">Além da obra</p>
           <h2>E muito mais para sua casa</h2>
         </div>
-        <div class="more">
+        <div class="more reveal">
           <div class="more__item"><div class="more__img photo" data-src="assets/fotos/mais-utilidades.jpg" data-label="mais-utilidades.jpg"></div><h3>Utilidades domésticas</h3><p>Cozinha, limpeza e organização.</p></div>
           <div class="more__item"><div class="more__img photo" data-src="assets/fotos/mais-jardim.jpg" data-label="mais-jardim.jpg"></div><h3>Jardim e área externa</h3><p>Mangueiras, vasos e ferramentas.</p></div>
           <div class="more__item"><div class="more__img photo" data-src="assets/fotos/mais-iluminacao.jpg" data-label="mais-iluminacao.jpg"></div><h3>Iluminação e decoração</h3><p>Luminárias, lâmpadas e acessórios.</p></div>
-          <div class="more__item"><div class="more__img photo" data-src="assets/fotos/mais-variedades.jpg" data-label="mais-variedades.jpg"></div><h3>Variedades</h3><p>[Outras linhas vendidas na loja.]</p></div>
+          <div class="more__item"><div class="more__img photo" data-src="assets/fotos/mais-variedades.jpg" data-label="mais-variedades.jpg"></div><h3>Variedades</h3><p>[Outras linhas disponíveis no catálogo.]</p></div>
         </div>
       </div>
     </section>
@@ -299,20 +279,24 @@
 
     <!-- ===== Contato ===== -->
     <section class="section" id="contato">
-      <div class="container contact">
+      <div class="container contact reveal">
         <div>
           <p class="kicker kicker--dark">Contato</p>
-          <h2>Venha nos visitar</h2>
+          <h2>Fale com a gente</h2>
           <ul class="contact__list">
-            <li><svg class="ico ico--lg"><use href="#i-pin"/></svg><div><strong>Endereço</strong>Rua Exemplo, 000, Bairro, Cidade/UF · CEP 00000-000</div></li>
-            <li><svg class="ico ico--lg"><use href="#i-clock"/></svg><div><strong>Horário</strong>Seg. a sex., 7h às 18h · Sáb., 7h às 12h</div></li>
-            <li><svg class="ico ico--lg"><use href="#i-phone"/></svg><div><strong>Telefone</strong>(00) 0000-0000</div></li>
             <li><svg class="ico ico--lg"><use href="#i-chat"/></svg><div><strong>WhatsApp</strong>(00) 00000-0000</div></li>
+            <li><svg class="ico ico--lg"><use href="#i-phone"/></svg><div><strong>Telefone</strong>(00) 0000-0000</div></li>
             <li><svg class="ico ico--lg"><use href="#i-mail"/></svg><div><strong>E-mail</strong>contato@gasan.com.br</div></li>
+            <li><svg class="ico ico--lg"><use href="#i-clock"/></svg><div><strong>Horário de atendimento</strong>Seg. a sex., 7h às 18h · Sáb., 7h às 12h</div></li>
+            <li><svg class="ico ico--lg"><use href="#i-pin"/></svg><div><strong>Escritório</strong>Rua Padre Manuel da Nóbrega, 882<!-- TODO: bairro, cidade e CEP --><br><small>Atendimento administrativo. Não é loja de retirada: entregamos no seu endereço.</small></div></li>
           </ul>
         </div>
-        <!-- TODO: colar aqui o iframe do Google Maps (Compartilhar > Incorporar um mapa) -->
-        <div class="map photo" data-label="Mapa do Google com o endereço da loja"></div>
+        <div class="map photo" data-src="assets/fotos/mapa-entrega.jpg" data-label="mapa-entrega.jpg (área de entrega)" role="img" aria-label="Mapa ilustrado da área de entrega no Rio de Janeiro e arredores">
+          <video class="map__video" autoplay muted loop playsinline preload="metadata" poster="assets/fotos/mapa-entrega.jpg" aria-hidden="true">
+            <source src="assets/fotos/mapa-entrega-animado.mp4" type="video/mp4">
+          </video>
+          <div class="map__caption"><strong>Onde entregamos</strong><span>Toda a cidade do Rio de Janeiro e arredores</span></div>
+        </div>
       </div>
     </section>
   </main>
@@ -332,20 +316,21 @@
       <div>
         <h4>Navegação</h4>
         <ul>
-          <li><a href="#categorias">Produtos</a></li>
+          <li><a href="catalogo.html">Catálogo completo</a></li>
           <li><a href="#materiais">Materiais</a></li>
           <li><a href="#sobre">A empresa</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
       <div>
         <h4>Produtos</h4>
         <ul>
-          <li><a href="#mat-basico">Material básico</a></li>
-          <li><a href="#mat-ferragens">Ferragens e ferramentas</a></li>
-          <li><a href="#mat-eletrica">Elétrica</a></li>
-          <li><a href="#mat-hidraulica">Hidráulica</a></li>
-          <li><a href="#mat-tintas">Tintas e acabamento</a></li>
+          <li><a href="#materiais" data-produto="0">Material básico</a></li>
+          <li><a href="#materiais" data-produto="1">Ferragens e ferramentas</a></li>
+          <li><a href="#materiais" data-produto="2">Elétrica</a></li>
+          <li><a href="#materiais" data-produto="3">Hidráulica</a></li>
+          <li><a href="#materiais" data-produto="4">Tintas e acabamento</a></li>
         </ul>
       </div>
       <div>
@@ -361,10 +346,11 @@
     </div>
     <div class="container footer__bottom">
       <span>© <span id="ano"></span> GASAN. Todos os direitos reservados.</span>
-      <span>CNPJ 00.000.000/0000-00</span>
+      <span>CNPJ 00.000.000/0000-00 · Rua Padre Manuel da Nóbrega, 882</span>
     </div>
   </footer>
 
+  <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

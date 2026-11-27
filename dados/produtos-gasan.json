@@ -1,0 +1,4 @@
+{
+  "_como_usar": "Preencha aqui os dados próprios da GASAN, usando o id do produto (ex.: trena:9188). Depois rode: python3 ferramentas/importar_catalogo.py. Campos: preco (número), sku, descricao, imagem (caminho de foto própria, ex.: assets/produtos/9188.jpg), nome, ocultar (true para não mostrar).",
+  "trena:0000": { "preco": null, "sku": "", "descricao": "", "imagem": "", "ocultar": false }
+}
